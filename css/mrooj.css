@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+:root {
+    --blue-Color: #0073e7;
+    --dark-Color: #19283f ;
+    --yellow-color: #ffc400;
+    --section-color:#eff7fa ;
+    --red-color:#ff3150;
+  }
+  .comp {
+    border-bottom: 1px solid var(--dark-Color);
+    width: 140px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+/* start-nav */
+.navbar {
+    background-color: white;
+    box-shadow: 0 0 10px #ddd;
+}
+.navbar .logo {
+    width: 70px;
+}
+.navbar ul li a{
+   color: var(--dark-Color) ;
+   font-size: 1.2rem;
+}
+.navbar ul li a:hover {
+    color: var(--blue-Color);
+}
+/* end-nav */
+/* stat-landing */
+.landing {
+    height: 400px;
+}
+.landing .image{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.landing .image img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.landing .content {
+    width: 50%;
+    position: relative;
+    left: -80px;
+}
+.landing .content h1{
+    font-size: 3.5rem;
+    color: var(--dark-Color);
+}
+.landing .content p{
+    font-size: 1.2rem;
+    color: var(--dark-Color);
+}
+@media(max-width:767px) {
+    .landing .content {
+        display: none;
+    }
+}
+/* end-landing */
+/* start-service */
+
+.service .card{
+    height: 390px;
+    border: none;
+    transition: .3s;
+}
+.service .card:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+.service .card .image {
+    width: 290px;
+    height: 290px;
+    position: relative;
+    left: 20px;
+}
+.service .card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.service .card h3{
+    color: var(--dark-Color);
+}
+/* end-service */
+/* start-project */
+.carousel-image {
+    max-width: 100%;
+    height: auto; 
+  }
+  
+  @media (min-width: 992px) { 
+    .carousel-image {
+      max-width: 60%; 
+      height: 20%;
+      margin: 0 auto; 
+    }
+  }
+/* end-project */
+/* start-footer */
+footer{
+    background-color: var(--section-color);
+}
+footer h5{
+   color: #001287;
+}
+footer li,
+footer i,
+footer a{
+    color: var(--dark-Color);
+}
+/* end-footer */
